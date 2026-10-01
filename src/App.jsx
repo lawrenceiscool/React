@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import StudentCard from "./components/StudentCard";
+import Footer from "./components/Footer";
 const students = [
 { id: 1, name: "Ana", major: "IT", score: 82 },
 { id: 2, name: "Boon", major: "CS", score: 58 },
@@ -21,9 +22,10 @@ score={student.score}
 />
 ))}
 </main>
+  <Footer count={students.length} />
+
 </>
 );
 }
 export default App;
-<Footer count={students.length} />
 
